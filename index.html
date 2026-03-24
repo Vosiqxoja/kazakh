@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Kazakh Language - Quick Overview</title>
+
+    <!-- Reveal.js Core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/night.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Noto+Serif:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --color-primary: #003366;
+        --color-secondary: #f2c94c;
+        --color-bg: #0e1f35;
+        --color-surface: rgba(255, 255, 255, 0.08);
+        --color-text: #ffffff;
+        --color-text-dark: #222222;
+        --color-muted: #b8cbe0;
+
+        --r-background-color: var(--color-bg);
+        --r-main-font: "Exo 2", "Segoe UI", sans-serif;
+        --r-main-font-size: 21px;
+        --r-main-color: var(--color-text);
+        --r-heading-font: "Noto Serif", Georgia, serif;
+        --r-heading-color: var(--color-secondary);
+        --r-heading-text-transform: none;
+        --r-heading-letter-spacing: 0.01em;
+        --r-selection-background-color: rgba(242, 201, 76, 0.35);
+      }
+
+      .reveal {
+        background:
+          radial-gradient(circle at 15% 20%, rgba(242, 201, 76, 0.1), transparent 42%),
+          radial-gradient(circle at 85% 75%, rgba(76, 139, 245, 0.12), transparent 50%),
+          var(--color-bg);
+      }
+
+      .reveal h1,
+      .reveal h2,
+      .reveal h3,
+      .reveal h4 {
+        margin-bottom: 0.35em;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+      }
+
+      .reveal h2 {
+        font-size: 2.2em;
+        color: var(--color-secondary);
+        border-bottom: 2px solid rgba(242, 201, 76, 0.42);
+        padding-bottom: 0.12em;
+      }
+
+      .reveal h3 {
+        font-size: 1.5em;
+        color: #ffe7a0;
+        margin-top: 0.25em;
+      }
+      .reveal h4{
+        font-size: 1.2em;
+        color: #f2c94c;
+      }
+
+      .reveal p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin: 0.18em 0;
+      }
+
+      .reveal ul,
+      .reveal ol {
+        display: block;
+        text-align: left;
+        margin: 0 0 0 1.08em;
+        padding: 0;
+      }
+
+      .reveal li {
+        font-size: 1.3em;
+        line-height: 1.35;
+        margin-bottom: 0.16em;
+      }
+
+      .reveal li::marker {
+        color: var(--color-secondary);
+      }
+
+      .reveal strong,
+      .reveal em {
+        color: #ffe7a0;
+      }
+
+      .reveal section img {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+        margin: 0;
+      }
+
+      .row {
+        display: flex !important;
+        align-items: center;
+        gap: 1.5em;
+        width: 100%;
+        text-align: left;
+      }
+
+      .row .col-text {
+        flex: 1 1 55%;
+        min-width: 0;
+      }
+
+      .row .col-img {
+        flex: 0 0 38%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .row .col-img.wide {
+        flex: 0 0 46%;
+      }
+
+      .row .col-img img,
+      .row .col-img iframe {
+        width: 100%;
+        max-width: 100%;
+        max-height: 320px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .content-wrap {
+        text-align: left;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      .title-slide {
+        text-align: center !important;
+      }
+
+      .title-slide h1 {
+        font-size: 2.8em;
+        color: #ffffff;
+        margin-bottom: 0.12em;
+        border-bottom: none;
+      }
+
+      .title-slide h3 {
+        color: #ffe7a0;
+        font-size: 1.2em;
+        font-weight: 500;
+      }
+
+      .title-meta {
+        margin: 0.8em auto 0;
+        max-width: 78%;
+        background: rgba(0, 24, 53, 0.7);
+        border: 1px solid rgba(242, 201, 76, 0.45);
+        border-radius: 10px;
+        padding: 0.5em 0.8em;
+      }
+
+      .title-meta p {
+        margin: 0.16em 0;
+        font-size: 0.72em;
+        color: #ffffff;
+      }
+
+      .stat-card {
+        background: rgba(255, 255, 255, 0.09);
+        border: 1px solid rgba(242, 201, 76, 0.4);
+        border-radius: 10px;
+        padding: 0.5em 0.7em;
+        margin-top: 0.4em;
+      }
+
+      .big-number {
+        font-size: 1.35em;
+        color: var(--color-secondary);
+        font-weight: 700;
+      }
+
+      .status-scale {
+        margin-top: 0.45em;
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 999px;
+        height: 16px;
+        position: relative;
+      }
+
+      .status-fill {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 47%;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #2ecc71 0%, #f2c94c 80%);
+      }
+
+      .status-pointer {
+        position: absolute;
+        left: 47%;
+        top: -6px;
+        width: 4px;
+        height: 28px;
+        background: #f2994a;
+      }
+
+      .small-note {
+        font-size: 0.63em;
+        color: var(--color-muted);
+        margin-top: 0.22em;
+      }
+
+      .three-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.42em;
+        margin-top: 0.3em;
+      }
+
+      .policy-box {
+        border-radius: 8px;
+        padding: 0.35em 0.55em;
+        font-size: 0.72em;
+      }
+
+      .policy-box h4 {
+        font-size: 1em;
+        margin-bottom: 0.1em;
+      }
+
+      .policy-law {
+        background: rgba(46, 134, 222, 0.2);
+        border: 1px solid rgba(121, 187, 255, 0.55);
+      }
+
+      .policy-promo {
+        background: rgba(242, 201, 76, 0.18);
+        border: 1px solid rgba(242, 201, 76, 0.6);
+      }
+
+      .policy-challenge {
+        background: rgba(235, 87, 87, 0.17);
+        border: 1px solid rgba(242, 153, 74, 0.62);
+      }
+
+      .school-bar {
+        margin-top: 0.4em;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 999px;
+        overflow: hidden;
+        height: 22px;
+        display: flex;
+      }
+
+      .school-kz {
+        width: 51%;
+        background: #2f80ed;
+      }
+
+      .school-ru {
+        width: 17%;
+        background: #8f9bb3;
+      }
+
+      .school-bi {
+        width: 31%;
+        background: #f2c94c;
+      }
+
+      .legend {
+        display: flex;
+        gap: 0.45em;
+        flex-wrap: wrap;
+        font-size: 0.62em;
+        margin-top: 0.3em;
+      }
+
+      .legend span {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.24em;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4em;
+        margin-top: 0.4em;
+      }
+
+      .video-grid img {
+        width: 100%;
+        max-height: 90px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .video-label {
+        font-size: 0.58em;
+        color: var(--color-muted);
+        line-height: 1.2;
+      }
+
+      .source {
+        font-size: 0.54em;
+        color: #a9bfd7;
+      }
+
+      .reveal .progress {
+        height: 4px;
+        color: var(--color-secondary);
+      }
+
+      .reveal .progress span {
+        background: var(--color-secondary);
+        transition: width 0.8s ease;
+      }
+
+      .reveal .slide-number {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.62);
+        background: transparent;
+        right: auto;
+        left: 16px;
+        bottom: 10px;
+      }
+
+      .reveal .controls {
+        color: var(--color-secondary);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- ═══════ SLIDE 1 — INTRODUCTION ═══════ -->
+        <section
+          class="title-slide"
+          data-background-image="https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Kazakhstan.svg"
+          data-background-opacity="0.24"
+          data-background-size="cover"
+          data-transition="fade"
+        >
+          <h1>Kazakh Language</h1>
+          <h3>A Quick 10-Minute Overview</h3>
+
+          <div class="title-meta">
+            <p><strong>Supervisor:</strong> Ms.Ellie</p>
+            <p>
+              <strong>Members:</strong> A. Xolmamatov, V. Maxmudov,
+              A. Abdumuminov, G. Shatskiy
+            </p>
+            <p>
+              Topics: Where spoken, speakers, status, schools, alphabet,
+              population, spoken video, and Dimash Qudaibergen as a key Kazakh artist today.
+            </p>
+          </div>
+        </section>
+
+        <!-- ═══════ SLIDE 2 — WHAT IS KAZAKH? ═══════ -->
+        <section data-transition="slide">
+          <h2>What Is Kazakh?</h2>
+          <div class="row">
+            <div class="col-text">
+              <ul>
+                <li>
+                  <strong>Kazakh (Qazaq tili / Қазақ тілі)</strong> is a Turkic
+                  language in the Kipchak branch.
+                </li>
+                <li>
+                  It is the <strong>state language of Kazakhstan</strong> and has
+                  official status in Russia's Altai Republic.
+                </li>
+                <li>
+                  It is also spoken by Kazakh communities in China, Mongolia,
+                  Uzbekistan, Russia, and beyond.
+                </li>
+                <li>
+                  This presentation covers usage, speakers, status, schools,
+                  script, map, video, and a key Kazakh artist today.
+                </li>
+              </ul>
+              <p class="source">
+                Sources: Britannica, Wikipedia, 50languages
+              </p>
+            </div>
+            <div class="col-img">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Un-kazakhstan.png"
+                alt="Map silhouette of Kazakhstan"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════ SLIDE 3 — WHERE IS IT SPOKEN? ═══════ -->
+        <section data-transition="slide">
+          <h2>Where Is Kazakh Spoken?</h2>
+          <div class="row">
+            <div class="col-text">
+              <ul>
+                <li>
+                  Kazakh is spoken across <strong>all regions of Kazakhstan</strong>.
+                </li>
+                <li>
+                  Large communities are found in
+                  <strong>Xinjiang (China)</strong> and
+                  <strong>Bayan-Olgii (Mongolia)</strong>.
+                </li>
+                <li>
+                  Smaller diaspora groups live in Russia, Uzbekistan,
+                  Kyrgyzstan, Turkey, Germany, and other countries.
+                </li>
+              </ul>
+              <p class="small-note">
+                Key labels to mention while presenting: Kazakhstan, Xinjiang,
+                Bayan-Olgii.
+              </p>
+            </div>
+            <div class="col-img wide">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Kazakh_Diaspora_in_the_World.png"
+                alt="World map showing Kazakh diaspora distribution"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════ SLIDE 4 — SPEAKERS & STATUS ═══════ -->
+        <section data-transition="slide">
+          <h2>How Many Speakers? Language Status</h2>
+          <div class="row">
+            <div class="col-text">
+              <div class="stat-card">
+                <p class="big-number">~15 to 16 million speakers worldwide</p>
+                <p>
+                  Around <strong>13 million</strong> people in Kazakhstan reported
+                  speaking Kazakh in census-based reporting.
+                </p>
+              </div>
+
+              <div class="status-scale" aria-hidden="true">
+                <div class="status-fill"></div>
+                <div class="status-pointer"></div>
+              </div>
+              <p class="small-note">
+                Safety scale: Safe -> Vulnerable -> Endangered
+              </p>
+
+              <ul>
+                <li><strong>Not endangered</strong> overall.</li>
+                <li>
+                  Sometimes described as <strong>somewhat vulnerable</strong> in
+                  urban and higher-education domains.
+                </li>
+              </ul>
+            </div>
+            <div class="col-img">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Kazakhstan.svg"
+                alt="Flag of Kazakhstan with sun and eagle"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════ SLIDE 5 — GOVERNMENT EFFORTS ═══════ -->
+        <section data-transition="slide">
+          <h2>Government Efforts: Protection and Gaps</h2>
+          <div class="row">
+            <div class="col-text">
+              <div class="three-box">
+                <div class="policy-box policy-law">
+                  <h4>Laws</h4>
+                  <p>
+                    Constitution and Language Law define Kazakh as the state
+                    language and protect language rights.
+                  </p>
+                </div>
+                <div class="policy-box policy-promo">
+                  <h4>Promotion</h4>
+                  <p>
+                    National programs since 1991 increased Kazakh use in
+                    education, media, administration, and business.
+                  </p>
+                </div>
+                <div class="policy-box policy-challenge">
+                  <h4>Challenges</h4>
+                  <p>
+                    Russian remains strong in some ministries, major cities,
+                    and parts of higher education.
+                  </p>
+                </div>
+              </div>
+              <p class="source">
+                Sources: Law on Languages, Qazinform, OSCE Academy, TASS
+              </p>
+            </div>
+            <div class="col-img">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Kazakhstan.svg"
+                alt="Kazakhstan flag used as visual marker for language policy"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════ SLIDE 6 — SCHOOLS ═══════ -->
+        <section data-transition="slide">
+          <h2>Schools: Is Kazakh a Main Teaching Language?</h2>
+          <div class="row">
+            <div class="col-text">
+              <ul>
+                <li>
+                  Yes. Kazakhstan has thousands of schools where
+                  <strong>Kazakh is the main language of instruction</strong>.
+                </li>
+                <li>
+                  Approximate school profile (2019): 51% Kazakh-medium,
+                  17% Russian-medium, 31% bilingual.
+                </li>
+                <li>
+                  Reported totals: 3,749 Kazakh-medium, 1,195 Russian-medium,
+                  2,046 bilingual schools.
+                </li>
+              </ul>
+
+              <div class="school-bar" aria-label="Language of instruction shares">
+                <div class="school-kz" title="Kazakh-medium 51%"></div>
+                <div class="school-ru" title="Russian-medium 17%"></div>
+                <div class="school-bi" title="Bilingual 31%"></div>
+              </div>
+              <div class="legend">
+                <span><i class="dot" style="background:#2f80ed"></i>Kazakh-medium</span>
+                <span><i class="dot" style="background:#8f9bb3"></i>Russian-medium</span>
+                <span><i class="dot" style="background:#f2c94c"></i>Bilingual</span>
+              </div>
+            </div>
+            <div class="col-img">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Un-kazakhstan.png"
+                alt="Map of Kazakhstan beside school language statistics"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════ SLIDE 7 — ALPHABET ═══════ -->
+        <section data-transition="slide">
+          <h2>Kazakh Alphabet and Script</h2>
+          <div class="row">
+            <div class="col-text">
+              <ul>
+                <li>
+                  Historically, Kazakh has been written in Arabic, Latin, and
+                  Cyrillic scripts.
+                </li>
+                <li>
+                  In Kazakhstan today, the main script is
+                  <strong>Cyrillic-based (42 letters)</strong>.
+                </li>
+                <li>
+                  Distinct Kazakh letters include
+                  <strong>ә, ғ, қ, ң, ө, ұ, ү, һ, і</strong> (shown in the chart).
+                </li>
+                <li>
+                  A gradual transition toward a modern Latin alphabet is planned.
+                </li>
+              </ul>
+            </div>
+            <div class="col-img wide" style="
+            background-color: white;
+            height: 150px;
+            width: 500px;
+            padding: 20px;
+            border-radius: 20px;
+            ">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Kazakh_alphabet_%28cyrillic%29.svg"
+                alt="Kazakh Cyrillic alphabet chart" 
+                style="height: 200px;
+                width: 800px;
+                object-fit: contain;
+                border-radius: 10px;"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════ SLIDE 8 — MAP & POPULATION ═══════ -->
+        <section data-transition="slide">
+          <h2>Main Country Map and Population</h2>
+          <div class="row">
+            <div class="col-text">
+              <ul>
+                <li>
+                  Kazakhstan is the main country where Kazakh is the state
+                  language and widely spoken.
+                </li>
+                <li>
+                  Estimated population in early 2026:
+                  <strong>about 20.5 million</strong>.
+                </li>
+                <li>
+                  Kazakhstan is the 9th-largest country by land area, with low
+                  population density.
+                </li>
+              </ul>
+
+              <div class="stat-card">
+                <p class="big-number">~20.5 million people (2026)</p>
+                <p>State language: Kazakh</p>
+              </div>
+            </div>
+            <div class="col-img">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Un-kazakhstan.png"
+                alt="Political map silhouette of Kazakhstan"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════ SLIDE 9 — SPOKEN VIDEO ═══════ -->
+        <section data-transition="slide">
+          <h2>Hear Kazakh: Spoken Language Video</h2>
+          <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 1em;">
+            <iframe
+              src="https://www.youtube.com/embed/E_bdcUrcJKk"
+              title="Kazakh language learning video"
+              style="width: 80%; max-width: 800px; height: 450px; border-radius: 10px; border: none; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+
+        <!-- ═══════ SLIDE 10 — DIMASH QUDAIBERGEN ═══════ -->
+        <section data-transition="slide">
+          <h2>Kazakh Artist Today: Dimash Qudaibergen</h2>
+          <div class="row">
+            <div class="col-text">
+              <ul>
+                <li>
+                  <strong>Dimash Qudaibergen</strong> (b. 1994) is a globally famed Kazakh singer, songwriter, and multi-instrumentalist known for his 6+ octave vocal range.
+                </li>
+                <li>
+                  He blends classical (bel canto), pop, and traditional Kazakh music styles into his performances.
+                </li>
+                <li>
+                  Gained international stardom after winning major contests and appearing on China's <em>Singer 2017</em>.
+                </li>
+                <li>
+                  While singing in over a dozen languages, he actively tours global arenas sharing Kazakh folk songs (like <em>Daididau</em>) and culture worldwide.
+                </li>
+              </ul>
+            </div>
+            <div class="col-img">
+              <img
+                src="image.png"
+                alt="Portrait of Dimash Qudaibergen performing on stage"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Reveal.js Core JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+
+    <script>
+      Reveal.initialize({
+        width: 1100,
+        height: 700,
+        margin: 0.07,
+        center: true,
+
+        hash: true,
+        keyboard: true,
+        touch: true,
+        navigationMode: "default",
+
+        transition: "slide",
+        transitionSpeed: "default",
+        backgroundTransition: "fade",
+
+        controls: true,
+        controlsLayout: "bottom-right",
+        controlsBackArrows: "faded",
+        progress: true,
+        slideNumber: "c/t",
+
+        autoAnimate: true,
+        autoAnimateEasing: "ease",
+        autoAnimateDuration: 1.0,
+
+        plugins: [RevealNotes],
+      });
+    </script>
+  </body>
+</html>
